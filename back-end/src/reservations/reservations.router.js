@@ -9,4 +9,7 @@ const controller = require("./reservations.controller");
 
 router.route("/").get(controller.list);
 
+//------------come back to--------------//
+//router.route("/new").get(controller.)
+
 module.exports = router;
