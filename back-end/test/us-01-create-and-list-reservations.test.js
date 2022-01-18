@@ -155,12 +155,12 @@ describe("US-01 - Create and list reservations", () => {
         reservation_time: "13:30",
         people: 1,
       };
-
+      
       const response = await request(app)
         .post("/reservations")
         .set("Accept", "application/json")
         .send({ data });
-
+        
       expect(response.body.error).toContain("mobile_number");
       expect(response.status).toBe(400);
     });
