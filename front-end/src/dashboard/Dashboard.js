@@ -37,14 +37,14 @@ function Dashboard({ date }) {
       <div className="d-md-flex mb-3">
         <h4 className="mb-0">Reservations for date</h4>
       </div>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button onClick={() => history.push(`/dashboard?date=${previous(date)}`)} type="button" class="btn btn-dark">
+      <div className="btn-group" role="group" aria-label="Basic example">
+        <button onClick={() => history.push(`/dashboard?date=${previous(date)}`)} type="button" className="btn btn-dark">
           Previous
         </button>
-        <button onClick={() => history.push(`/dashboard`)} type="button" class="btn btn-dark">
+        <button onClick={() => history.push(`/dashboard`)} type="button" className="btn btn-dark">
           Today
         </button>
-        <button onClick={() => history.push(`/dashboard?date=${next(date)}`)} type="button" class="btn btn-dark">
+        <button onClick={() => history.push(`/dashboard?date=${next(date)}`)} type="button" className="btn btn-dark">
           Next
         </button>
       </div>

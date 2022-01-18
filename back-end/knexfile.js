@@ -3,13 +3,14 @@
  *
  * You will not need to make changes to this file.
  */
-
+ 
 require('dotenv').config();
 const path = require("path");
 
 const {
   DATABASE_URL = "postgresql://postgres@localhost/postgres",
-  DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
+  DATABASE_URL_DEVELOPMENT= "postgres://rogoyvsp:8KRppXJK1617L2kb2RijHiOKONPNILDi@fanny.db.elephantsql.com/rogoyvsp",
+  // DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
   DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
   DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
   DEBUG,

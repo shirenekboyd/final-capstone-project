@@ -16,7 +16,7 @@ async function create(req, res, next) {
 
 function validateReservation(req, res, next) {
   const { data } = req.body;
-  console.log("data", data)
+  //console.log("data", data)
   if (!data) next({ status: 400, message: "Data is missing" });
   const requiredFields = [
     "first_name",

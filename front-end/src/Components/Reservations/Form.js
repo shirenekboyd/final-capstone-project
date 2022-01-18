@@ -158,12 +158,12 @@ export default function Form() {
         <button
           onClick={() => history.goBack()}
           type="button"
-          class="btn btn-secondary m-2"
+          className="btn btn-secondary m-2"
         >
           Cancel
         </button>
         {/*Submit button when clicked saves the new reservation, then displays the /dashboard page for the date of the new reservation */}
-        <input class="btn btn-primary" type="submit" value="Submit"></input>
+        <input className="btn btn-primary" type="submit" value="Submit"></input>
       </form>
     </>
   );
