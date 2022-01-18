@@ -49,6 +49,8 @@ function validateReservation(req, res, next) {
       message: "reservation_date must be a date"
     })
   }
+// let dateCheck = new Date();
+//   if(req.body.reservation_date === new Date())
 
   if(!data.reservation_time.match(timeFormat)){
     next({
@@ -60,7 +62,7 @@ function validateReservation(req, res, next) {
 }
 module.exports = {
   list: list,
-  create: [validateReservation, create],
+  create: [validateReservation, asyncErrorBoundary(create)],
   // read: [asyncErrorBoundary(movieExists), asyncErrorBoundary(read)],
   // theaterList: [
   //   asyncErrorBoundary(movieExists),

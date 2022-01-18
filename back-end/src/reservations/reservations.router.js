@@ -14,8 +14,8 @@ router.route("/")
   .all(methodNotAllowed);
 
   //route connects to app.js /reservations
-router.route("/new")
-  .post(controller.create)
-  .all(methodNotAllowed);
+// router.route("/new")
+  
+//   .all(methodNotAllowed);
 
 module.exports = router;
